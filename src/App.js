@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Contact from "./components/Contact";
+import Whiskeerson from "./images/mr-whiskerson.png";
+import Fluffy from "./images/fluffykins.png";
+import Felix from "./images/felix.png";
+import Pumpkin from "./images/pumpkin.png";
+import "./style.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="contacts">
+      <Contact
+        img={Whiskeerson}
+        name="Mr. Whiskerson"
+        phone="(212) 555-1234"
+        email="mr.whiskaz@catnap.meow"
+      />
+      <Contact
+        img={Fluffy}
+        name="Fluffykins"
+        phone="(212) 555-2345"
+        email="fluff@me.com"
+      />
+      <Contact
+        img={Felix}
+        name="Felix"
+        phone="(212) 555-4567"
+        email="thecat@hotmail.com"
+      />
+      <Contact
+        img={Pumpkin}
+        name="Pumpkin"
+        phone="(0800) CAT KING"
+        email="pumpkin@scrimba.com"
+      />
     </div>
   );
 }
-
-export default App;
